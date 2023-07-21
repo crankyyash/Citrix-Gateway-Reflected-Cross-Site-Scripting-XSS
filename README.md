@@ -13,3 +13,11 @@ Create a urls list named citrix_urls.txt in same dir as script. Enter urls or ip
 Eg. : cat citrix_urls.txt :>
 test.qwerty.com
 192.168.158.68
+
+POC:
+
+![reflected-xsx-1](https://github.com/crankyyash/Citrix-Gateway-Reflected-Cross-Site-Scripting-XSS/assets/61792333/03eef1d9-4446-4a33-b042-224795325e0f)
+
+![reflected-xss-2](https://github.com/crankyyash/Citrix-Gateway-Reflected-Cross-Site-Scripting-XSS/assets/61792333/1c1f3d12-9945-4706-9f8b-fe102a60ad0d)
+
+<img width="729" alt="reflected-xss-3" src="https://github.com/crankyyash/Citrix-Gateway-Reflected-Cross-Site-Scripting-XSS/assets/61792333/7af0de48-3ede-4ee7-ac19-520e868d9e8b">
