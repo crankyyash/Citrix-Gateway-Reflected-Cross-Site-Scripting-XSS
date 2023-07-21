@@ -9,9 +9,14 @@ Citrix advisory : https://support.citrix.com/article/CTX477714/citrix-adc-and-ci
 
 Simple bash script to check whether citrix gateways are vulnerable to reflected cross site scripting (XSS)
 
-Create a urls list named citrix_urls.txt in same dir as script. Enter urls or ips of citirx gateways on each line.
-Eg. : cat citrix_urls.txt :>
+Create a urls list named citrix_urls.txt in same dir as script. Enter urls or ips of citirx gateways on each new line.
+
+Eg. : 
+
+yash@test:~/$ cat citrix_urls.txt
+
 test.qwerty.com
+
 192.168.158.68
 
 POC:
