@@ -4,12 +4,22 @@ for i in $(cat citrix_urls.txt);
     do echo "[+] Checking reflected xss in citrix/netscalar at $i";
     echo ;
     k=$(curl "https://$i$payload" -s -k);
+    j=$(curl "http://$i$payload" -s -k);
     t=$(echo $k | grep "document.domain");
+    u=$(echo $j | grep "document.domain");
     if [ -z "$t" ];
     then
-        echo "Not Vulnerable";
+        echo "[-] HTTPS $i is Not Vulnerable";
     else
-        echo "$i is Vulnerable to Reflected XSS!!";
+        echo "[+] HTTPS $i is Vulnerable to Reflected XSS!!";
+        echo "[+] Payload : https://$i$payload";
+    fi;
+    if [ -z "$u" ];
+    then
+        echo "[-] HTTP $i is Not Vulnerable";
+    else
+        echo "[+] HTTP $i is Vulnerale to Reflected XSS!!";
+        echo "[+] Payload : http://$i$payload";
     fi;
     echo "--------------------------------";
     echo ;
