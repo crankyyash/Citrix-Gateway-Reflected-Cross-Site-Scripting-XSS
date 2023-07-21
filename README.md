@@ -1,7 +1,11 @@
 # Citrix-Gateway-Reflected-Cross-Site-Scripting-XSS-
-Exploit script for reflected xss in Citrix gateways
+Simple exploit script for reflected xss in Citrix gateways
 
 https://blog.assetnote.io/2023/06/29/binary-reversing-citrix-xss/ - 29 June 2023
+
+CVE-2023-24487, CVE-2023-24488
+
+Citrix advisory : https://support.citrix.com/article/CTX477714/citrix-adc-and-citrix-gateway-security-bulletin-for-cve202324487-cve202324488
 
 Simple bash script to check whether citrix gateways are vulnerable to reflected cross site scripting (XSS)
 
